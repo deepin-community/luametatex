@@ -1,5 +1,75 @@
-template-repository (1.0-1) unstable; urgency=medium
+luametatex (2.11.02+really2.11.01+ds-1) unstable; urgency=medium
 
-  * Initial release
+  * The version/snapshot of ConTeXt in Debian does to fit to ltmx
+    2.11.02, downgrade to 2.11.01 again (Closes: #1072682).
+  * Disable patches for mimalloc.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Hilmar Preusse <hille42@web.de>  Sat, 15 Jun 2024 23:25:01 +0200
+
+luametatex (2.11.02+ds-4) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Hilmar Preusse <hille42@web.de>  Wed, 05 Jun 2024 14:13:07 +0200
+
+luametatex (2.11.02+ds-3) experimental; urgency=medium
+
+  * Link dynamically with mimalloc.
+  * Patch handling:
+    - adding, fixing DEP-3 headers
+    - removing obsolete patch
+
+ -- Hilmar Preusse <hille42@web.de>  Fri, 24 May 2024 22:35:07 +0200
+
+luametatex (2.11.02+ds-2) experimental; urgency=medium
+
+  * Add patches from upstream to fix build failures on arches, where
+    ‘__builtin_thread_pointer’ is not supported.
+    https://github.com/microsoft/mimalloc/issues/883 .
+
+ -- Hilmar Preusse <hille42@web.de>  Thu, 16 May 2024 08:40:41 +0200
+
+luametatex (2.11.02+ds-1) experimental; urgency=medium
+
+  * New upstream version.
+    See https://github.com/contextgarden/luametatex/issues/12
+  * Add Breaks statement for old context.
+
+ -- Hilmar Preusse <hille42@web.de>  Wed, 15 May 2024 23:53:44 +0200
+
+luametatex (2.11.01+really2.11.01+ds-1) experimental; urgency=medium
+
+  * Reupload version 2.11.01 for TL 2024.
+
+ -- Hilmar Preusse <hille42@web.de>  Sun, 21 Apr 2024 16:35:11 +0200
+
+luametatex (2.11.01+really2.10.08+ds-1) unstable; urgency=medium
+
+  * Downgrade to 2.10.08 (Closes: #1064402).
+
+ -- Hilmar Preusse <hille42@web.de>  Wed, 06 Mar 2024 23:18:47 +0100
+
+luametatex (2.11.01+ds-2) unstable; urgency=medium
+
+  * armel needs linking with libatomic too.
+
+ -- Hilmar Preusse <hille42@web.de>  Tue, 20 Feb 2024 23:26:24 +0100
+
+luametatex (2.11.01+ds-1) unstable; urgency=medium
+
+  * New upstream release, refresh patches.
+    - Should fix build failure on HURD.
+    - Contains a local copy of potrace -> extend d/copyright.
+    - Redo d/patches/no_strip.diff, stripping is configured in a
+      different file.
+  * Update d/gbp.conf.
+  * Link luametatex with libatomic on m68k, powerpc and sh4. Should fix
+    FTBFS on these arches.
+
+ -- Hilmar Preusse <hille42@web.de>  Tue, 20 Feb 2024 08:23:29 +0000
+
+luametatex (2.10.08+ds-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #1034501)
+
+ -- Hilmar Preusse <hille42@web.de>  Tue, 18 Jul 2023 00:02:20 +0200
