@@ -1,9 +1,97 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Source: https://github.com/contextgarden/luametatex
+Upstream-Name: luametatex
+Upstream-Contact: Hans Hagen <pragma@wxs.nl>
+Files-Excluded:
+ source/libraries/softposit/build/Linux-x86_64-GCC/softposit_test.a
 
-Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
+Files:
+ *
+Copyright:
+ 19xx - 2023 tex: Donald Knuth
+ 19xx - 20xx etex: Peter Breitenlohner, Phil Taylor and friends
+ 19xx - 20xx pdftex: Han The Thanh and friends
+ 1991 - 20xx omega: John Plaice and Yannis Haralambous
+ 19xx - 20xx aleph: Giuseppe Bilotta
+ 1994 - 20xx metapost: John Hobby, Taco Hoekwater, Luigi Scarso, Hans Hagen
+ 2018 - 2023 Hans Hagen <j.hagen@xs4all.nl>
+ 2018 - 2023 Wolfgang Schuster
+ 2018 - 2023 Mojca Miklavec
+ 2018 - 2023 Alan Braslau
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2023 - 2024 Hilmar Preusse <hille42@web.de>
+License: GPL-2+
+
+Files: source/libraries/avl/*
+Copyright: 2002 - 2012 Richard McGraw <dasnar@fastmail.fm>
+License: GPL-2+
+
+Files: source/libraries/decnumber/*
+Copyright: 2000 - 2009 Mike Cowlishaw <mfc@uk.ibm.com>
+License: ICU
+
+Files: source/libraries/hnj/*
+Copyright:
+ 1998 Raph Levien
+ 2001 ALTLinux, Moscow (http://www.alt-linux.org)
+ 2001 Peter Novodvorsky (nidd@cs.msu.su)
+License: GPL-2+
+
+Files: source/libraries/libcerf/*
+Copyright:
+ 2012 Steven G. Johnson
+ 2013 Joachim Wuttke
+License: MIT
+
+Files: source/libraries/mimalloc/*
+Copyright:
+ 2018 - 2021 Microsoft Corporation, Daan Leijen
+License: MIT
+
+Files: source/libraries/miniz/*
+Copyright:
+ 2013 - 2014 RAD Game Tools and Valve Software
+ 2010 - 2014 Rich Geldreich and Tenacious Software LLC
+License: MIT
+
+Files: source/libraries/potrace/*
+Copyright:
+ 2001 - 2019 Peter Selinger <selinger@users.sourceforge.net>
+License: GPL-2+
+
+Files: source/libraries/pplib/*
+Copyright:
+ 2019 Paweł Jackowski <p.jackowski@gust.org.pl>
+License: PD
+
+Files: source/libraries/softposit/*
+Copyright:
+ 2017 - 2018 A*STAR.
+License: BSD-3
+
+Files: source/lua/*
+Copyright:
+ Roberto Ierusalimschy, Waldemar Celes and Luiz Henrique de Figueiredo
+License: GPL-2+
+
+Files: source/luacore/lua55/*
+Copyright:
+ 2007 - 2019 Lua.org, PUC-Rio, Brazil (http://www.lua.org)
+License: MIT
+
+Files: source/luacore/luapeg/*
+Copyright:
+ 2007 - 2019 Lua.org, PUC-Rio, Brazil (http://www.lua.org)
+ 2007 - 2019 Roberto Ierusalimschy
+License: MIT
+
+Files: source/luacore/luasocket/*
+Copyright:
+ 2004 - 2013 Diego Nehab
+License: MIT
+
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -17,6 +105,90 @@ License: GPL-2+
  .
  You should have received a copy of the GNU General Public License
  along with this program. If not, see <https://www.gnu.org/licenses/>
- .
+Comment:
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: PD
+ Public domain software, produced as part of work done by the
+ United States Government & not subject to copyright in the US.
+ .
+ To the extent that any copyright protections may be considered to be held by
+ the authors of this software in some jurisdiction outside the United States,
+ the authors hereby waive those copyright protections and dedicate the
+ software to the public domain.  Thus, this license may be considered
+ equivalent to Creative Commons 0: ”No Rights Reserved”.
+ .
+ Note that, according to Gnu.org, public domain is compatible with GPL.
+
+License: ICU
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, provided that the above copyright notice(s) and this
+ permission notice appear in all copies of the Software and that both the
+ above copyright notice(s) and this permission notice appear in supporting
+ documentation.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. 
+ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE
+ LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR
+ ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+ IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
+ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ .
+ Except as contained in this notice, the name of a copyright holder shall not
+ be used in advertising or otherwise to promote the sale, use or other
+ dealings in this Software without prior written authorization of the
+ copyright holder.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+License: BSD-3
+ Copyright (c) The Regents of the University of California.
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
